@@ -1,0 +1,24 @@
+import discord
+from discord.ext import commands
+import asyncio
+
+
+class untitled(commands.Cog):
+  def __init__(self, client):
+    self.client = client
+
+  # Events
+  @commands.Cog.listener()
+  async def on_ready(self):
+    print('untitled-cog Active')
+    
+  # Commands
+  @commands.command()
+  async def test(self,ctx):
+    print("sample command")
+
+      
+    
+
+def setup(client):
+  client.add_cog(untitled(client))

@@ -1,0 +1,2 @@
+tl - Language
+False - slowMode
