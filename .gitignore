@@ -1,0 +1,3 @@
+# ignore server media files
+.m4a
+.mp3
