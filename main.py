@@ -67,7 +67,7 @@ async def on_message(message):
   
   await client.process_commands(message)
 
-
+## reads all cogs.py
 for filename in os.listdir('./cogs'):
   if filename.endswith('.py'):
     client.load_extension(f'cogs.{filename[:-3]}')
