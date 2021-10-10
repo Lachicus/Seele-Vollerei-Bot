@@ -14,7 +14,7 @@ client.remove_command("help")
 botKEY = os.environ.get("TOKEN")
 
 async def on_ready(self):
-    print('Observer-cog is Active')
+    print('Seele Vollerei is Online')
     
 @client.command()
 async def load(ctx, extension):
