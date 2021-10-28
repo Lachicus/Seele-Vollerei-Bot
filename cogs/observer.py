@@ -55,6 +55,11 @@ class net(commands.Cog):
 
           await message.channel.send(embed=embed)
       
+      if message.content.startswith('.slp'):
+        if message.channel.name != '🤖│bot-commands':
+          channel = self.client.get_channel(813698947901030421)
+          await message.channel.send(f"Captain please don't be messy: use {channel.mention} channel")
+      
       if not message.content.startswith('.'):
         if message.channel.name == '💬│jp-chat':
             if str(message.author) != "Seele Vollerei#9911":

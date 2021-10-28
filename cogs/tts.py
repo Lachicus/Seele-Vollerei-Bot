@@ -72,12 +72,6 @@ class tts(commands.Cog):
             voice_channel = server.voice_client
             voice_channel.play(discord.FFmpegPCMAudio("output.mp3"))
         
-
-
-      
-
-    
-    
   @commands.command()
   async def ttslang(self,ctx,lang):
     global language
@@ -115,6 +109,9 @@ class tts(commands.Cog):
     
     await ctx.send(embed=embed)
   
+  @commands.command()
+  async def test(self,ctx,*,msg):
+    await ctx.send(msg, tts=True)
  
   @commands.command()
   async def slow(self, ctx):

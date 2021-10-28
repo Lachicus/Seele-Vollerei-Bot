@@ -1,7 +1,8 @@
 import discord
 from discord.ext import commands
 import asyncio
-
+from bs4 import BeautifulSoup
+import requests
 from riotwatcher import LolWatcher
 import os
 
@@ -19,11 +20,13 @@ class riot(commands.Cog):
   @commands.Cog.listener()
   async def on_ready(self):
     print('net-cog Active')
-    
+  
+  # slp_php = soup.find("div", attrs={'class':'priceValue'}).text
   # Commands
   @commands.command()
   async def search(self,ctx,*,userName):
     link = userName.replace(" ","+")
+  
     try:
       summoner = lol_watcher.summoner.by_name(region,userName)
       stats = lol_watcher.league.by_summoner(region,summoner['id'])

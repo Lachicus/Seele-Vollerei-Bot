@@ -1,0 +1,13 @@
+[18/10/2021 23:14:24] BadArgument : Converting to "int" failed for parameter "index".
+[18/10/2021 23:14:24] UserInputError : Converting to "int" failed for parameter "index".
+[18/10/2021 23:14:26] BadArgument : Converting to "int" failed for parameter "index".
+[18/10/2021 23:14:26] UserInputError : Converting to "int" failed for parameter "index".
+[18/10/2021 23:14:28] BadArgument : Converting to "int" failed for parameter "amount".
+[18/10/2021 23:14:28] UserInputError : Converting to "int" failed for parameter "amount".
+[18/10/2021 23:14:49] BadArgument : Converting to "int" failed for parameter "amount".
+[18/10/2021 23:14:49] UserInputError : Converting to "int" failed for parameter "amount".
+[18/10/2021 23:15:09] MissingRequiredArgument : pollmsg is a required argument that is missing.
+[18/10/2021 23:15:09] UserInputError : pollmsg is a required argument that is missing.
+[19/10/2021 14:51:24] CommandInvokeError : Command raised an exception: Error: Destination path './cogs/net.py' already exists
+[19/10/2021 14:52:03] CommandInvokeError : Command raised an exception: ExtensionNotLoaded: Extension 'cogs.net' has not been loaded.
+[27/10/2021 11:09:29] CommandNotFound : Command "testing" is not found
